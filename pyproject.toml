@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arc-mcp"
+version = "0.1.0"
+description = "MCP server that lets AI assistants create and edit ARCs (Annotated Research Contexts) with DataPLANT's ARCtrl"
+readme = "README.md"
+requires-python = ">=3.12"  # arctrl 3.x requires Python 3.12+
+dependencies = [
+    "arctrl>=3.3,<4",
+    "mcp>=1.9,<3",
+    "pydantic>=2,<3",
+    "anyio>=4",
+]
+
+[project.scripts]
+arc-mcp = "arc_mcp_server:main"
+
+[project.urls]
+Repository = "https://github.com/nfdi4plants/ARC-MCP"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["arc_mcp_server.py"]
+
+[tool.hatch.build.targets.sdist]
+include = ["arc_mcp_server.py", "test_client.py", "README.md", "requirements.txt"]

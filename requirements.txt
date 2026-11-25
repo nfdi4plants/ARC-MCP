@@ -1,0 +1,4 @@
+arctrl>=3.3,<4
+mcp>=1.9,<3
+pydantic>=2,<3
+anyio>=4
