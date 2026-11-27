@@ -70,7 +70,7 @@ or pin a tag/commit in the URL: `git+https://github.com/nfdi4plants/ARC-MCP@v0.1
 e.g. `ARC_MCP_CMD="uvx --from . arc-mcp" python test_client.py`.
 
 ## Author
-[Mohamed Abouzid](mailto:m.abouzid@fj-juelich.de)
+[Mohamed Abouzid](https://github.com/mohamedAbouzid1/)
 
 ## Licence
-MIT
+MIT, see [LICENSE](LICENSE).

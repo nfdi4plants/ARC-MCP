@@ -7,6 +7,8 @@ name = "arc-mcp"
 version = "0.1.0"
 description = "MCP server that lets AI assistants create and edit ARCs (Annotated Research Contexts) with DataPLANT's ARCtrl"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.12"  # arctrl 3.x requires Python 3.12+
 dependencies = [
     "arctrl>=3.3,<4",
@@ -25,4 +27,4 @@ Repository = "https://github.com/nfdi4plants/ARC-MCP"
 only-include = ["arc_mcp_server.py"]
 
 [tool.hatch.build.targets.sdist]
-include = ["arc_mcp_server.py", "test_client.py", "README.md", "requirements.txt"]
+include = ["arc_mcp_server.py", "test_client.py", "README.md", "requirements.txt", "LICENSE"]
